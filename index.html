@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Code Quiz</title>
+</head>
+<body>
+    
+    <div class="scores">
+        <h1>Code Quiz</h1>
+        <button>View High Scores</button>
+    </div>
+    <div class="start"><button>Start Quiz</button></div>
+
+    <div class="quiz">
+        
+        <header>
+            <div class="timer">
+                <div class="time-numb">Time</div>
+                <div class="countdown">60</div>
+            </div>
+        </header>
+
+        <!-- Question 1-->
+        <div class="Q1">
+            <div class="question1">
+                <p>Arrays in javascript can be used to store?</p>
+            </div>
+
+            <div class="answers-list1">
+                <div onclick="q1a1()" class="answer1">
+                <p>1.Numbers and Strings</p>
+                </div>
+                <div onclick="q1a2()" class="answer2">
+                <p>2.Booleans</p>
+                </div>
+                <div onclick="q1a3()" class="answer3">
+                <p>3.Other arrays</p>
+                </div>
+                <div onclick="q1a4()"class="answer4">
+                <p>4.All of the above</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Question 2-->
+        <div class="Q2">
+            <div class="question2">
+                <p>String values must be enclosed within ___ when being assigned to variables?</p>
+            </div>
+
+            <div class="answers-list2">
+                <div onclick="q2a1()" class="answer1">
+                <p>1.Numbers and Strings</p>
+                </div>
+                <div onclick="q2a2()" class="answer2">
+                <p>2.Booleans</p>
+                </div>
+                <div onclick="q2a3()" class="answer3">
+                <p>3.Other arrays</p>
+                </div>
+                <div onclick="q2a4()"class="answer4">
+                <p>4.All of the above</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="result-section">
+        <div class="alldone">All Done!!!</div>
+        <div class="score">
+            <span>Score<p>100</p></span>
+        </div>
+        
+        <div class="finalbuttons">
+            <button class="submit">Submit</button>
+            <button class="restart">Restart</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
