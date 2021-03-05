@@ -55,6 +55,10 @@ body{
 .answers-list2 .answer2:hover,
 .answers-list2 .answer3:hover,
 .answers-list2 .answer4:hover,
+.answers-list3 .answer1:hover,
+.answers-list3 .answer2:hover,
+.answers-list3 .answer3:hover,
+.answers-list3 .answer4:hover,
 .scores button:hover,
 .submit:hover,
 .restart:hover{
@@ -68,7 +72,11 @@ body{
 .answers-list2 .answer1,
 .answers-list2 .answer2,
 .answers-list2 .answer3,
-.answers-list2 .answer4{
+.answers-list2 .answer4,
+.answers-list3 .answer1,
+.answers-list3 .answer2,
+.answers-list3 .answer3,
+.answers-list3 .answer4 {
     padding: 10px;
     margin-bottom: 10px;
     background:rgb(69, 69, 237);
@@ -115,6 +123,26 @@ body{
     top:70px;
     width: 700px;
 }
+.Q2.killQ2{
+    opacity: 0;
+    pointer-events: none;
+}
+/* Question 3 visibility for javascript*/
+.Q3.activeQ3 {
+    opacity: 1;
+    pointer-events: auto;
+}
+.Q3 {
+    opacity: 0;
+    pointer-events: none;
+    position:absolute;
+    top:70px;
+    width: 700px;
+}
+.Q3.killQ3{
+    opacity: 0;
+    pointer-events: none;
+}
 /*End of test css*/
 .result-section {
     opacity: 0;
@@ -146,8 +174,7 @@ body{
    width:150px;
    padding:20px;
 }
-.question1,
-.Q2 .question2{
+.question1,.question2,.question3{
     font-size: 30px;
     font-weight: 600;
     padding: 10px;
