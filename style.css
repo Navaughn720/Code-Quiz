@@ -59,6 +59,14 @@ body{
 .answers-list3 .answer2:hover,
 .answers-list3 .answer3:hover,
 .answers-list3 .answer4:hover,
+.answers-list4 .answer1:hover,
+.answers-list4 .answer2:hover,
+.answers-list4 .answer3:hover,
+.answers-list4 .answer4:hover,
+.answers-list5 .answer1:hover,
+.answers-list5 .answer2:hover,
+.answers-list5 .answer3:hover,
+.answers-list5 .answer4:hover,
 .scores button:hover,
 .submit:hover,
 .restart:hover{
@@ -76,7 +84,15 @@ body{
 .answers-list3 .answer1,
 .answers-list3 .answer2,
 .answers-list3 .answer3,
-.answers-list3 .answer4 {
+.answers-list3 .answer4,
+.answers-list4 .answer1,
+.answers-list4 .answer2,
+.answers-list4 .answer3,
+.answers-list4 .answer4,
+.answers-list5 .answer1,
+.answers-list5 .answer2,
+.answers-list5 .answer3,
+.answers-list5 .answer4 {
     padding: 10px;
     margin-bottom: 10px;
     background:rgb(69, 69, 237);
@@ -106,11 +122,21 @@ body{
     opacity: 1;
     pointer-events: auto;
 }
+.quiz.hideQuiz{
+    opacity: 0;
+}
+
 /* Question 1 visibility for javascript*/
+
+.Q1.activeQ1 {
+    opacity: 1;
+    pointer-events: auto;
+}
 .Q1.killQ1{
     opacity: 0;
     pointer-events: none;
 }
+
 /* Question 2 visibility for javascript*/
 .Q2.activeQ2 {
     opacity: 1;
@@ -143,7 +169,39 @@ body{
     opacity: 0;
     pointer-events: none;
 }
-/*End of test css*/
+/* Question 4 visibility for javascript*/
+.Q4.activeQ4 {
+    opacity: 1;
+    pointer-events: auto;
+}
+.Q4 {
+    opacity: 0;
+    pointer-events: none;
+    position:absolute;
+    top:70px;
+    width: 700px;
+}
+.Q4.killQ4{
+    opacity: 0;
+    pointer-events: none
+}
+/* Question 4 visibility for javascript*/
+.Q5.activeQ5 {
+    opacity: 1;
+    pointer-events: auto;
+}
+.Q5 {
+    opacity: 0;
+    pointer-events: none;
+    position:absolute;
+    top:70px;
+    width: 700px;
+}
+.Q5.killQ5{
+    opacity: 0;
+    pointer-events: none
+}
+/* Result section */
 .result-section {
     opacity: 0;
     display: flex;
@@ -157,6 +215,14 @@ body{
     padding:25px 45px;
     border-radius: 10px;
     pointer-events: none;
+}
+.result-section.active-result {
+    opacity: 1;
+    pointer-events: auto;
+}
+.result-section.kill-result{
+    opacity: 0;
+    pointer-events: none
 }
 /*Quiz css*/
 .quiz header {
@@ -174,7 +240,7 @@ body{
    width:150px;
    padding:20px;
 }
-.question1,.question2,.question3{
+.question1,.question2,.question3,.question4, .question5{
     font-size: 30px;
     font-weight: 600;
     padding: 10px;
